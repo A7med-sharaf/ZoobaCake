@@ -1,0 +1,216 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    
+}
+
+body{
+    min-width: 100%;
+    min-height: 100vh;
+   
+}
+
+
+
+.heroSection{
+width: 100%;
+height: 100vh;
+background-color: #fef9e6;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: center;
+gap: 40px;
+
+
+}
+
+.heroSection_text{
+    width: 25%;
+    height: 450px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 40px;
+    
+    
+}
+
+.heroSection_text ul {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    /* font-size: 16px; */
+    font-weight: 500;
+    
+    
+}
+
+.heroSection_text h1{
+    font-family: "Amiri Quran", serif;
+  font-weight: bold;
+  font-size: 5rem;
+  font-style: normal;
+}
+.heroSecton_image{
+    width: 25%;
+    height: 450px;
+    border: 1px solid red;
+}
+.heroSecton_image img{
+    width:340px;
+     height:400px;
+}
+.heroSection_prices{
+    width: 25%;
+    height: 450px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap:15px;
+}
+
+.heroSection_prices button{
+    width: 150px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    padding: 10px 40px;
+    border: 1px solid black;
+}
+
+
+.heroSection_prices button:hover{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+.heroSection_prices p{
+    font-weight: 500;
+}
+.media{
+    display: flex;
+    gap: 20px;
+}
+.media a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-brands{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 767px)  {
+   
+    .heroSection{
+        border: 2px solid blue;
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .heroSection_text ,.heroSecton_image,.heroSection_prices{
+        width: 90%;
+    }
+
+    .heroSecton_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .heroSection_prices{
+        height: 180px;
+    }
+    
+
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+    
+    .heroSection{
+        border: 2px solid blue;
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .heroSection_text ,.heroSecton_image,.heroSection_prices{
+        width: 90%;
+    }
+
+    .heroSecton_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .heroSection_text {
+       display: flex;
+       align-items: center;
+       /* justify-content: center; */
+    }
+    .heroSection_prices{
+        height: 180px;
+        display: flex;
+        align-items: end;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width:1024px) {
+       
+    .heroSection{
+        border: 2px solid blue;
+        height: 120vh;
+        display: flex;
+        gap:4px;
+        
+    }
+    .heroSection_text ,.heroSection_prices{
+        width: 35%;
+        padding: 5px;
+    }
+    .heroSecton_image{
+        width: 25%;
+    }
+
+    .heroSecton_image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .heroSecton_image img{
+        width:252px;
+         height:332px;
+    }
+    .heroSection_text {
+       display: flex;
+       align-items: center;
+       /* justify-content: center; */
+    }
+
+    .heroSection_text h1{
+        
+        font-weight: 500;
+        font-size: 3rem;
+       
+    }
+    .heroSection_prices{
+        /* height: 180px; */
+        display: flex;
+        align-items: end;
+    }
+}
